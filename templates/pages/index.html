@@ -1,0 +1,84 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load staticfiles %}
+<title>{% block title %}Acceuil | {{ block.super }}{% endblock %}</title>
+
+{% block content %}
+<!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url('../../static/images/intro-carousel/1.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                  <h2><strong>Bienvenue à OURAGAN</strong></h2>
+                <p>Suite à vos attentes OURAGAN viens de mettre à votre disposition un site web pour vous faciliter l’investissement en RDC.</p>
+                <a href="../pages/contact.html" class="btn-get-started scrollto">Contactez-Nous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('../../static/images/intro-carousel/2.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2><strong>Entrepeneuriat</strong></h2>
+                <p>Ayant l’expérience de plus de 5 ans, OURAGAN est spécialisée dans la facilitation du climat des affaires sur toute l’entendu de la RDC.</p>
+                <a href="../pages/contact.html" class="btn-get-started scrollto">Contactez-Nous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('../../static/images/intro-carousel/3.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2><strong>Vous êtes investisseurs</strong></h2>
+                <p>OURAGAN vous aide à investir en toute confiance et sécurité. OURAGAN est l’aide dont vous avez besoin pour réussir votre investissement.</p>
+                <a href="../pages/contact.html" class="btn-get-started scrollto">Contactez-Nous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('../../static/images/intro-carousel/4.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2><strong>Opportunités</strong></h2>
+                <p>OURAGAN vous offres des opportunités spécialisées dans la formation et promotion des jeunes talents, jeunes entrepreneurs ; tous ceux qui ont besoin d’un coup de main pour poser de bonnes bases en vue d’une longue et réussie carrière professionnelle ; OURAGAN est bien cette échelle qu’il vous faut pour atteindre le sommet de vos rêves.</p>
+                <a href="../pages/contact.html" class="btn-get-started scrollto">Contactez-Nous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('../../static/images/intro-carousel/5.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2><strong>réussir avec ouragan</strong></h2>
+                <p>Vous voir réussir et surtout vous aider à réussir, c’est notre raison d’être. Contactez-nous Notre particularité est de vous faciliter l’investissement en RDC.</p>
+                <a href="../pages/contact.html" class="btn-get-started scrollto">Contactez-Nous</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Precedent</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+{% endblock  %}

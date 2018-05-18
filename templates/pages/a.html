@@ -1,0 +1,34 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load staticfiles %}
+<title>{% block title %}Miniers | {{ block.super }}{% endblock %}</title>
+
+{% block content %}
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+              <h3 class="section-title">SECTEUR AGRICOLE</h3>
+         </header>
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="../../static/images/intro-carousel/1.jpg" height="400" width="800" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../static/images/intro-carousel/2.jpg" height="400" width="800" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../static/images/intro-carousel/5.jpg" height="400" width="800" alt="Third slide">
+                </div>
+              </div>
+            </div>
+          <hr/>
+        <p class="text-justify">La République Démocratie Congo est doté des possibilités immenses dans le domaine de l’agriculture susceptible d’en faire un grand grenier pour l’Afrique et une partie du monde. Il n’existe pas un recoin quelconque dans ce pays où il manque une ressource agricole.
+            <br/>Le sol de la RDC étant très fertile et procure une végétation dense de plusieurs espèces animales, longtemps négligé et vierge, son secteur agricole est en voie de développement. OURAGAN saisie cette occasion d’offrir dans le cadre de l’agro-business l’opportunité à ses clients investisseurs un partenariat industriel et semi-industriel.</p>
+
+      </div>
+    </section>
+{% endblock %}
+

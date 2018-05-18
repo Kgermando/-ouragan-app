@@ -1,0 +1,67 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load staticfiles %}
+<title>{% block title %}Formations | {{ block.super }}{% endblock %}</title>
+
+{% block content %}
+     <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Formations</h3>
+          <p>OURAGAN ouvre ses portes à toutes personnes ayant des ambitions de se perfectionnée dans le domaine que vous trouverez ci-dessous en vous offrant de formations pratiques avec des méthodes efficaces. Doter d’un personnel qualifié, nous dispensons des cours en ligne et nous mettons les combles à notre savoir-faire afin de répondre à vos besoins.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="#">Office</a></h4>
+            <p class="description"></p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="#">Infographie</a></h4>
+            <p class="description"></p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="#">Art et Culture</a></h4>
+            <p class="description"></p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="#">Langues</a></h4>
+              <p class="description"></p>
+          </div>
+<!--{#          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">#}-->
+<!--{#            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>#}-->
+<!--{#            <h4 class="title"><a href="{% url 'formation:marketing-list' %}">Marketing et Management</a></h4>#}-->
+<!--{#            <p class="description">Nous formons en beaucoup de domaine et nos formations sont aussi disponible a domicile grace a une equipe competante disponible que pour vous.</p>#}-->
+<!--{#          </div>#}-->
+<!--{#          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">#}-->
+<!--{#            <div class="icon"><i class="ion-ios-people-outline"></i></div>#}-->
+<!--{#            <h4 class="title"><a href="{% url 'formation:entrepeneuriat-list' %}">Entrepeneuriat</a></h4>#}-->
+<!--{#            <p class="description">ENous formons en beaucoup de domaine et nos formations sont aussi disponible a domicile grace a une equipe competante disponible que pour vous.</p>#}-->
+<!--{#          </div>#}-->
+<!--{##}-->
+<!--{#            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">#}-->
+<!--{#            <div class="icon"><i class="ion-ios-people-outline"></i></div>#}-->
+<!--{#            <h4 class="title"><a href="{% url 'formation:programmation-list' %}">Language de Programmation</a></h4>#}-->
+<!--{#            <p class="description">Nous formons en beaucoup de domaine et nos formations sont aussi disponible a domicile grace a une equipe competante disponible que pour vous.</p>#}-->
+<!--{#          </div>#}-->
+<!--{#            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">#}-->
+<!--{#            <div class="icon"><i class="ion-ios-people-outline"></i></div>#}-->
+<!--{#            <h4 class="title"><a href="">LeaderShips</a></h4>#}-->
+<!--{#            <p class="description">Nous formons en beaucoup de domaine et nos formations sont aussi disponible a domicile grace a une equipe competante disponible que pour vous.</p>#}-->
+<!--{#          </div>#}-->
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load staticfiles %}
+<title>{% block title %}Miniers | {{ block.super }}{% endblock %}</title>
+
+{% block content %}
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+              <h3 class="section-title">SECTEUR MINIER</h3>
+         </header>
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="../../static/images/intro-carousel/1.jpg" height="400" width="800" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../static/images/intro-carousel/2.jpg" height="400" width="800" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../static/images/intro-carousel/5.jpg" height="400" width="800" alt="Third slide">
+                </div>
+              </div>
+            </div>
+          <hr/>
+        <p class="text-justify">Le sol et le sous de la RDC regorge d’une gamme variée de ressources minières ce qui lui a valu le nom de scandale géologique. Le secteur minier classe la RDC en deuxième position après la RSA en Afrique. Le pays figure parmi les plus riches potentiellement.
+            <br/>Fier de son expertise et grâce au concours de ses partenaires vertébrés, OURAGAN assure à ses clients « investisseurs aussi bien nationaux qu’internationaux », la découverte de meilleurs sites miniers, l’exploration, la vente ainsi l’exploitation en partenariat de ces derniers. Soucieux de voir ses clients réussir, OURAGAN vous garantit un accompagnement efficace et adapté aux besoins pas à pas, de l’exploration a l’exploitation effective et vous servir d’éclaireur.</p>
+
+      </div>
+    </section>
+{% endblock %}

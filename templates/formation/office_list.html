@@ -1,0 +1,44 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load staticfiles %}
+<title>{% block title %}Formations | {{ block.super }}{% endblock %}</title>
+
+
+{% block content %}
+
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Bureautique</h3>
+          <p>Nous formons en beaucoup de domaine et nos formations sont aussi disponible a domicile grace a une equipe competante disponible que pour vous.</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+              {% for obj in object_list %}
+                  <h4 class="title">{{ obj.titre_office }}</h4>
+                  <p class="description">{{ obj.contenu_office }} <br/> {{ obj.last_accessed  }}</p>
+              {% endfor %}
+          </div>
+        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+              {% for obj in object_list %}
+                  <h4 class="title">{{ obj.titre_office }}</h4>
+                  <p class="description">{{ obj.contenu_office }} <br/> {{ obj.last_accessed  }}</p>
+              {% endfor %}
+          </div>
+        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+              {% for obj in object_list %}
+                  <h4 class="title">{{ obj.titre_office }}</h4>
+                  <p class="description">{{ obj.contenu_office }} <br/> {{ obj.last_accessed  }}</p>
+              {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+{% endblock %}

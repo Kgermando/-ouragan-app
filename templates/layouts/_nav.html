@@ -1,0 +1,25 @@
+{% load static %}
+
+ <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+           <div id="logo" class="pull-left">
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="../pages/index.html"><img src="../../static/images/titre.png" alt=""/></a>
+          </div>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="{% url 'home' %}">Accueil</a></li>
+          <li><a href="{% url 'opportunites' %}">Opportunités</a></li>
+          <li><a href="{% url 'formation:formation-list' %}">Formations</a></li>
+          <li><a href="#">Eagle_pub</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <!--<li><a href="#">About</a></li>-->
+        </ul>
+      </nav><!-- #nav-menu-container -->
+  </header><!-- #header -->
