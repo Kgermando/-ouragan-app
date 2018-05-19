@@ -25,7 +25,7 @@ SECRET_KEY = '#h=^43-=4@wxnk_4m4irla@qbec6x83+fl1yp1gw$rs(hp+qff'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ouragan.herokuapp.com']
 
 
 # Application definition
